@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<!-- Мета-теги -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="description" content="Описание сайта">
+	<meta name="keywords" content="Ключевые слова">
+	<meta name="author" content="Astranex">
+
+	<!-- Заголовок -->
+
+	<title>Путь к успеху</title>
+
+	<!-- Подключение -->
+	
+	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico"> 
+
+	<!--[if lt IE 9]>
+	  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+	  </script>
+	<![endif]-->
+
+	<style type="text/css">
+		* {
+			background: #111;
+			color: #fff;
+			font-size: 44px;
+		}
+		.red-square {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.centurion-square {
+			display: inline-flex;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+		.foo {
+			background-color: green !important;
+		}
+		.calculator {
+			border-radius: 10px;
+			box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+			margin-block-start: 1em;
+			max-inline-size: 15rem;
+			overflow: hidden;
+			}
+		.calculator__output {
+			background: hsl(203, 10%, 15%);
+			color: hsl(255, 100%, 100%);
+			font-size: 1.5rem;
+			height: 100px;
+			padding-block-start: 0.3rem;
+			padding-block-end: 0.3rem;
+			padding-inline-end: 0.5rem;
+			text-align: end;
+			}
+		.calculator__keys {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 1px;
+			background: hsl(0, 0%, 18%);
+			}
+		.calculator__key {
+			background: hsl(203, 10%, 15%);
+			border: none;
+			padding-block-start: 0.5rem;
+			padding-block-end: 0.5rem;
+			padding-inline-end: 0.7rem;
+			padding-inline-start: 0.7rem;
+			font-size: 1rem;
+			}
+		.calculator__key:active,
+		.calculator__key:focus {
+			box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+			outline: none;
+			}
+		.calculator__key--operator {
+			background: hsl(0, 0%, 29%);
+			}
+		.calculator__key--operator:active {
+			background: hsl(0, 0%, 25%);
+			}
+		.calculator__key--enter {
+			grid-column: 4 / 5;
+			grid-row: 2 / span 4;
+			background: hsl(357, 100%, 50%);
+			}
+	</style>
+
+</head>
+<body>
+	
+	<main>
+
+		<!-- <button onclick="incr()">+</button>
+		<h5></h5>
+		<button onclick="decr()">–</button> -->
+
+
+<!-- 		<h1 id="heading" class="heading">Привет, мир!
+		</h1>
+
+		<h2 id="head" class="heading-2">Всем ку!</h2>
+
+		<h2><a href="http://astranex.ru/" target="_blank">Абоба</a></h2>
+
+		<span id="days">9</span>й день <span id="hours">0</span>:<span id="mins">0</span>:<span id="secs">0</span> -->
+
+		<!-- <div class="calculator">
+			<div class="calculator__output">0</div>
+			<div class="calculator__keys">
+			  <button class="calculator__key calculator__key--operator">+</button>
+			  <button class="calculator__key calculator__key--operator">-</button>
+			  <button class="calculator__key calculator__key--operator">&times;</button>
+			  <button class="calculator__key calculator__key--operator">÷</button>
+			  <button class="calculator__key">7</button>
+			  <button class="calculator__key">8</button>
+			  <button class="calculator__key">9</button>
+			  <button class="calculator__key">4</button>
+			  <button class="calculator__key">5</button>
+			  <button class="calculator__key">6</button>
+			  <button class="calculator__key">1</button>
+			  <button class="calculator__key">2</button>
+			  <button class="calculator__key">3</button>
+			  <button class="calculator__key">0</button>
+			  <button class="calculator__key">.</button>
+			  <button class="calculator__key">AC</button>
+			  <button class="calculator__key calculator__key--enter">=</button>
+			</div>
+		  </div> -->
+
+	</main>
+
+	<!-- Скрипты -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="practice.js"></script>
+
+<!-- 	<script type="text/javascript">
+		alert('Проверка');
+	</script> -->
+
+</body>
+</html>
