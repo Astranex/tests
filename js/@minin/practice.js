@@ -1,5 +1,7 @@
 // ПРАКТИЧЕСКИЕ ЗАДАНИЯ
 
+// (daruse.ru)
+
 // На основные знания //
 // ---- Базовые ----  //
 
@@ -7,13 +9,13 @@
 
 const multiply = (a, b) => a * b
 
-console.log(multiply(5, 3))
+console.log('Задача 1:', multiply(5, 3))
 
 // 2. Написать функцию, которой передаем, имя, фамилия и возраст, и получаем строку "Привет Иван Петров с возрастом 17 лет" (только здесь данные, которые были переданы в функцию)
 
 const logAboutPerson = (personName, personLastName, age) => `Привет, ${personName +' '+ personLastName} с возрастом ${age} лет` // {} и return можно не писать
 
-console.log(logAboutPerson('Виталий', 'Галюзин', 19))
+console.log('Задача 2:', logAboutPerson('Виталий', 'Галюзин', 19))
 
 // 3. Написать функцию, которая принимает пол человека ('M','F') в виде строки, результат функции возвращает строку "Ваш пол мужской" (или женский) или же "Ваш пол не опеределен"
 
@@ -27,7 +29,7 @@ const logAboutGender = gender => {
     }
 }
 
-console.log(logAboutGender('M'))
+console.log('Задача 3:', logAboutGender('M'))
 
 // 4. Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке.
 
@@ -43,7 +45,7 @@ const dayOfWeek = num => {
     }
 }
 
-console.log(dayOfWeek(5))
+console.log('Задача 4:', dayOfWeek(5))
 
 // 5. Написать функцию, которая принимает строку (в этом тексте 3-5 предложений), верните каждое первое слово в каждом предложении, через запятую.
 
@@ -67,7 +69,7 @@ const anaphora = text => {
     return splitedText.join(', ')
 }
 
-console.log(anaphora('Стеклянные капельки дождя стучат по крышам! Редкие прохожие спешат спрятаться от дождя в подъездах домов. По мостовой бегут ручьи.'))
+console.log('Задача 5:', anaphora('Стеклянные капельки дождя стучат по крышам! Редкие прохожие спешат спрятаться от дождя в подъездах домов. По мостовой бегут ручьи.'))
 
 // 6. Написать функцию, которой передаем имя, и она возраващает приветствие в зависимости от времени суток (Доброе утро\день\вечер\ночи Иван)
 
@@ -90,7 +92,7 @@ const greeting = personName => {
     return `${greet}, ${personName}`
 }
 
-console.log(greeting('Виталий'))
+console.log('Задача 6:', greeting('Виталий'))
 
 // 7. Вывести числа от 1 до 100 в столбец. К каждой цифре подписать состояние возраста (1-17 ребенок, 18-30 - молодой, 30-55 - зрелый, от 55 - старый). Например. 33 - зрелый
 
@@ -125,7 +127,7 @@ if (age) { // Доработка функции согласно заданию 
                 ageState = 'старый'
             }
             
-            console.log(`${a} - ${ageState}`)
+            console.log('Задача 7:', `${a} - ${ageState}`)
         }
     }
 }
@@ -140,7 +142,7 @@ const infoAbout = (personName, personAge) => {
     return `${personName} имеет возраст ${personAge} и он ${ageState}`
 }
 
-console.log(infoAbout('Иван', 44))
+console.log('Задача 8:', infoAbout('Иван', 44))
 
 // ---- Массивы ----  //
 
@@ -158,7 +160,7 @@ const isOdd = () => {
     }
 }
 
-console.log(isOdd())
+console.log('Задача 9:', isOdd())
 
 // 10. Сделай функцию, которая принимает массив любых целых чисел, которая возращает истину, если хотя бы один элемент нечетный, если все четные, то false.
 
@@ -174,7 +176,7 @@ const isEven = () => {
     }
 }
 
-console.log(isEven())
+console.log('Задача 10:', isEven())
 
 // 11. Сделай функцию, которая принимает массив любых целых чисел, которая возращает новый массив, где все элементы кратны пяти. ([1,2,5,12,15,21] вернет [5,15])
 
@@ -182,7 +184,7 @@ const numbersArray = [1, 2, 5, 12, 15, 21, 35, 55, 23, 100]
 
 const multiplesOfFive = () => numbersArray.filter(number => number % 5 === 0)
 
-console.log(multiplesOfFive())
+console.log('Задача 11:', multiplesOfFive())
 
 // 12. Написать функцию, которая принимает массив чисел, например [1, 2, 3, 4, 5] и функция возращает среднее арифметическое (округлить результат до десятых)
 
@@ -204,14 +206,14 @@ for (let n of numsArray) {
     }
 }}
 
-console.log(average())
+console.log('Задача 12:', average())
 
 // 13. Написать функцию, которая принимает массив чисел, например [1, 2, 3, 4, 5], и переносит первый элемент массива в конец 
 // (Например можно засунуть первый элемент в конец, затем удалить первый элемент)
 // Попробуй несколькими способами сделать, если догадаешься
 
 const numsArr = [1, 2, 3, 4, 5] 
-console.log(numsArr)
+console.log('Задача 13:', numsArr)
 
 const replace = () => {
     firstNum = numsArr.shift()
@@ -219,10 +221,10 @@ const replace = () => {
 }
 
 replace()
-console.log(numsArr)
+console.log('Задача 13:', numsArr)
 
 replace()
-console.log(numsArr)
+console.log('Задача 13:', numsArr)
 
 // 14. Написать функцию, которая принимает массив сотрудников, каждый сотрудник имеет имя и возраст ([{name: 'Иван', age: 23},...]) 
 // и возвращает массим, где каждый элемент представляет из себя строку "Имя: Иван, возвраст: 23"
@@ -236,7 +238,7 @@ const workers = [
 ]
 
 const logAboutWorkers = () => workers.map(person => `Имя: ${person.personName}, возраст: ${person.age}, специализация: ${person.job}`)
-console.log(logAboutWorkers())
+console.log('Задача 14:', logAboutWorkers())
 
 // ---- Объекты ----  //
 
@@ -250,10 +252,10 @@ const salaries = {
   }
 
 if (Object.keys(salaries).length === 0) {
-    console.log(0)
+    console.log('Задача 15:', 0)
 } else {
     const valuesSalaries = Object.values(salaries)
-    console.log(valuesSalaries.reduce((acc, value) => acc += value))
+    console.log('Задача 15:', valuesSalaries.reduce((acc, value) => acc += value))
 }
 
 // 16. Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2
@@ -285,9 +287,9 @@ let menu = {
     title: "My menu"
 }
 
-console.log(menu)
+console.log('Задача 16:', menu)
 
-const multiplyNumeric = (obj, multiplier) => {
+const multiplyNumeric = (obj, multiplier) => { // Вторым параметром добавил изменяемый множитель
 
     const keysArray = Object.keys(obj)
     const valuesArray = Object.values(obj)
@@ -301,7 +303,7 @@ const multiplyNumeric = (obj, multiplier) => {
 }
 
 multiplyNumeric(menu, 5)
-console.log(menu)
+console.log('Задача 16:', menu)
 
 // 17. Написать объект ladder - объект, который позволяет подниматься вверх и спускаться. Пример работы должен быть таким:
 
@@ -321,26 +323,26 @@ const ladder = {
     down() {this.step--}
 }
 
-console.log(ladder.showStep())
+console.log('Задача 17:', ladder.showStep())
 ladder.down()
 ladder.up()
 ladder.up()
 ladder.up()
-console.log(ladder.showStep())
-console.log(ladder)
+console.log('Задача 17:', ladder.showStep())
+console.log('Задача 17:', ladder)
 
 // ---- Работа c DOM ----  //
 
 // 18. Вывести кнопку с текстом "Привет", при нажатии на неё выводим alert c текстом "Привет Мир!"
 
-document.write('<button id=\'hello-btn\'>1. Привет</button><br/>')
+document.write('<button id=\'hello-btn\'>18. Привет</button><br/>')
 const helloBtn = document.getElementById('hello-btn')
 
 helloBtn.onclick = () => alert('Привет, мир!')
 
 // 19. Выводим кнопку с текстом "Заполнить" и незаполненный инпут, при клике на кнопку, заполняем инпут текстом "test@email.ru"
 
-document.write('<button id=\'fill-btn\'>2. Заполнить</button><br/><input type=\'text\'></input>')
+document.write('<button id=\'fill-btn\'>19. Заполнить</button><br/><input type=\'text\'></input>')
 const fillBtn = document.getElementById('fill-btn')
 const fillInput = document.getElementsByTagName('input')[0]
 
@@ -348,7 +350,7 @@ fillBtn.onclick = () => fillInput.value = 'test@email.ru'
 
 // 20. Выводим кнопку и инпут, в инпуте можно ввести любой и текст и при нажатии на кнопку, выводится алерт с текстом "Вы ввели 'текст инпута'" или "Вы ничего не ввели в поле"
 
-document.write('<button id=\'show-btn\'>3. Показать текст инпута</button><br/><input type=\'text\'></input>')
+document.write('<button id=\'show-btn\'>20. Показать текст инпута</button><br/><input type=\'text\'></input>')
 const showBtn = document.getElementById('show-btn')
 const showInput = document.getElementsByTagName('input')[1]
 
@@ -356,7 +358,7 @@ showBtn.onclick = () => alert(showInput.value ? `Вы ввели ${showInput.val
 
 // 21. Выводим кнопку с текстом "Поменять" и два инпута, при клике на кнопку инпуты меняются своим введеным текстом
 
-document.write('<button id=\'replace-btn\'>4. Поменять текст инпутов</button><br/><input type=\'text\'></input><br/><input type=\'text\'></input>')
+document.write('<button id=\'replace-btn\'>21. Поменять текст инпутов</button><br/><input type=\'text\'></input><br/><input type=\'text\'></input>')
 const replaceBtn = document.getElementById('replace-btn')
 const replaceInput = document.getElementsByTagName('input')[2]
 const replaceInputTwo = document.getElementsByTagName('input')[3]
@@ -372,7 +374,7 @@ replaceBtn.onclick = () => [replaceInput.value, replaceInputTwo.value] = [replac
 
 // 22. Выводим две кнопки "заблокировать" и "разблокировать" и инпут. Одна из них блокирует инпут с помощью атрибута disabled, а другая разблокирует
 
-document.write('<button id=\'unblock-btn\'>5. Заблокировать инпут</button><br/><button id=\'block-btn\'>5. Разблокировать инпут</button><br/><input type=\'text\'></input><br/>')
+document.write('<button id=\'unblock-btn\'>22. Заблокировать инпут</button><br/><button id=\'block-btn\'>22. Разблокировать инпут</button><br/><input type=\'text\'></input><br/>')
 
 const unblockBtn = document.querySelector('#unblock-btn')
 const blockBtn = document.querySelector('#block-btn')
@@ -384,7 +386,7 @@ blockBtn.onclick = () => blockedInput.removeAttribute('disabled')
 // 23. Вывести любой квадрат и кнопку "скрыть квадрат". Когда мы нажимаем на скрыть, квадрат исчезает и текст кнопки меняется на "показать квадрат" 
 // И так можно кликать сколько угодно раз
 
-document.write('<button id=\'switch-btn\'>6. Скрыть квадрат</button><br/>')
+document.write('<button id=\'switch-btn\'>23. Скрыть квадрат</button><br/>')
 document.write('<div class=\'red-square\'></div>')
 
 const switchBtn = document.querySelector('#switch-btn')
@@ -396,11 +398,11 @@ switchBtn.onclick = () => {
     if (inc == 0) {
         inc++
         redSquare.style.opacity = '0'
-        switchBtn.innerText = '6. Показать квадрат'
+        switchBtn.innerText = '23. Показать квадрат'
     } else if (inc == 1) {
         inc--
         redSquare.style.opacity = '1'
-        switchBtn.innerText = '6. Скрыть квадрат'
+        switchBtn.innerText = '23. Скрыть квадрат'
     }
     // console.log(inc)
 }
@@ -521,9 +523,9 @@ const urlRe = new RegExp(/https*:\/\/[\w*,\d*]+.\w+\/\w+.(html|php)/gm)
 
 const isValidUrl = url => url.match(urlRe) ? 'Валидная ссылка' : 'Невалидная ссылка'
 
-console.log(isValidUrl('http://astranex.ru/index.html')) // Валидная
-console.log(isValidUrl('https://astran3x.ru/ind3x.php')) // Валидная
-console.log(isValidUrl('http://astranex.com')) // Невалидня
+console.log('Задача 27:', isValidUrl('http://astranex.ru/index.html')) // Валидная
+console.log('Задача 27:', isValidUrl('https://astran3x.ru/ind3x.php')) // Валидная
+console.log('Задача 27:', isValidUrl('http://astranex.com')) // Невалидня
 
 // 28. Проверка номера телефона на валидность. Передаем телефон функции и проверяем валидное оно или нет (возращаем тру или фолс). 
 // Такие номера должны быть валидными: 89991112233, 8 (999) 1112233, +7 (999) 111-22-33, +7 (999) 111 22 33. 
@@ -534,12 +536,12 @@ const phoneRe = new RegExp(/^\+?(7|8)\d*\s?[(?\d*)?]*\s?\d*[-?,\s?]?\d*[-?,\s?]?
 
 const isValidPhone = phone => phone.match(phoneRe) ? 'Валидный номер телефона' : 'Невалидный номер телефона'
 
-console.log(isValidPhone('89991112233'))
-console.log(isValidPhone('8 (999) 1112233'))
-console.log(isValidPhone('+7 (999) 111-22-33'))
-console.log(isValidPhone('+329199) 111 22-33'))
+console.log('Задача 28', isValidPhone('89991112233'))
+console.log('Задача 28', isValidPhone('8 (999) 1112233'))
+console.log('Задача 28', isValidPhone('+7 (999) 111-22-33'))
+console.log('Задача 28', isValidPhone('+329199) 111 22-33'))
 
-// learn.javascript.ru
+// (learn.javascript.ru)
 
 /*
 
@@ -582,10 +584,9 @@ console.log(calculator.mul())
 
 */
 
-/* 
-(old.code.mu) 
-Задачи на основы языка JavaScript
-*/
+// (old.code.mu) 
+
+// Задачи на основы языка JavaScript
 
 // Задача 1. Создайте переменную str и присвойте ей значение 'abcde'. Обращаясь к отдельным символам этой строки выведите на экран символ 'a', символ 'b', символ 'e'.
 
@@ -1757,12 +1758,23 @@ console.log('Задача 112:', eString)
 
 // Задача 113. Проверьте, что строка начинается на http://
 
-let rString = 'http://astranex.ru'
+let rString = 'http://astranex.ru/index.php'
 
 if (rString.startsWith('http://') || rString.startsWith('https://')) {
-    console.log('Задача 111:', 'Валидная ссылка')
+    console.log('Задача 113:', 'Валидная ссылка')
 } else {
-    console.log('Задача 111:', 'Невалидная ссылка')
+    console.log('Задача 113:', 'Невалидная ссылка')
 }
 
-// 1. 
+// Задача 114. Проверьте, что строка заканчивается на .html.
+
+if (rString.endsWith('html')) {
+    console.log('Задача 114:', 'Валидная ссылка')
+} else {
+    console.log('Задача 114:', 'Невалидная ссылка')
+}
+
+// Задачи на основы работы с пользовательскими функциями в JavaScript
+
+// Задача 115. Сделайте функцию, которая возвращает квадрат числа. Число передается параметром.
+
